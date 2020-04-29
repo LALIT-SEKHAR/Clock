@@ -60,13 +60,6 @@
                         inset -8px -8px 9px rgb(255, 255, 255),
                         inset 8px 8px 9px rgb(117, 117, 117);
         } */
-        /* .clock::before{
-            position: relative;
-            content: "";
-            height: 160px;
-            width: 5px;
-            background-color: red;
-        } */
         .hours{
             display: flex;
             justify-content: center;
@@ -238,6 +231,10 @@
     const HoursTic = document.querySelector(".hours");
     const MiutsTic = document.querySelector(".miuts");
     const seconTic = document.querySelector(".second");
+
+    const clockHolder = document.querySelector(".clockHolder");
+    const clock = document.querySelector(".clock");
+
     const Time = () => {
         let date = new Date();
         let houre = date.getHours();
@@ -265,7 +262,37 @@
         }
         myFunction();
 
-        
+    
+    // Switching theme-------------------|
+
+    let whiteColor = true;
+
+    const togglemethod = () => {
+
+        if ( whiteColor === true) {
+            lightmode();
+            whiteColor = false;  
+            console.log("White");
+        } else if (whiteColor === false) {
+            darkmode();
+            console.log("Dark");
+            whiteColor = true;
+        }
+    }
+    // for light mode
+    let lightmode = () => {
+        clockHolder.style.backgroundColor = "rgb(201, 201, 201)";
+        clockHolder.style.color = "black";
+        clock.style.boxShadow= "-8px -8px 9px rgb(255, 255, 255),8px 8px 9px rgb(119, 119, 119),inset -8px -8px 9px rgb(255, 255, 255),inset 8px 8px 9px rgb(117, 117, 117);";
+    }
+
+    // for dark mode
+    let darkmode = () => {
+        clockHolder.style.backgroundColor = "rgb(30, 30, 30)";
+        clockHolder.style.color = "white";
+        clock.style.boxShadow= "-8px -8px 9px rgb(60, 60, 60),8px 8px 9px rgb(0, 0, 0),inset -8px -8px 9px rgb(60, 60, 60),inset 8px 8px 9px rgb(0, 0, 0);";
+    }
+    // Switching theme end--------------|
 
 </script>
 </html>

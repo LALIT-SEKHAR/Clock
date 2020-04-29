@@ -7,7 +7,7 @@
 .clockHolder{
     height: 100vh;
     color:white;
-    width: 100vw;
+    width: 100%vw;
     display: flex;
     justify-content: center;
     align-items: center;

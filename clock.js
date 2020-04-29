@@ -23,7 +23,42 @@
         MiutsTic.style.transform = `rotate(${minDeg}deg)`;
         HoursTic.style.transform = `rotate(${houDeg}deg)`;
 
-    }
+    }    
+    // // Switching theme-------------------|
+
+    // let whiteColor = true;
+
+    // const togglemethod = () => {
+    //     console.log("in loop obj..");
+    //     if ( whiteColor === true) {
+    //         console.log("white..");
+    //         lightmode();
+    //         whiteColor = false;  
+    //     } else if (whiteColor === false) {
+    //         console.log("dark..");
+    //         darkmode();
+    //         whiteColor = true;
+    //     }
+    // }
+    // // for light mode
+    // let lightmode = () => {
+    //     clockHolder.style.backgroundColor = "rgb(201, 201, 201)";
+    //     clockHolder.style.color = "black";
+    //     console.log("white is working..");
+        
+    //     clock.style.boxShadow= "-8px -8px 9px rgb(255, 255, 255),8px 8px 9px rgb(119,119,119),inset -8px -8px 9px rgb(255, 255, 255),inset 8px 8px 9px rgb(117, 117, 117)";
+    // }
+
+    // // for dark mode
+    // let darkmode = () => {
+    //     clockHolder.style.backgroundColor = "rgb(30, 30, 30)";
+    //     clockHolder.style.color = "white";
+    //     console.log("dark is working..");
+    //     clock.style.boxShadow= "-8px -8px 9px rgb(60, 60, 60),8px 8px 9px rgb(0, 0, 0),inset -8px -8px 9px rgb(60, 60, 60),inset 8px 8px 9px rgb(0, 0, 0);";
+    // }
+    // // Switching theme end--------------|
+
+
 
     function myFunction() {
         setInterval(function(){
@@ -31,33 +66,3 @@
         }, 1000);
         }
         myFunction();
-
-    
-    // Switching theme-------------------|
-
-    let whiteColor = true;
-
-    const togglemethod = () => {
-
-        if ( whiteColor === true) {
-            lightmode();
-            whiteColor = false;  
-        } else if (whiteColor === false) {
-            darkmode();
-            whiteColor = true;
-        }
-    }
-    // for light mode
-    let lightmode = () => {
-        clockHolder.style.backgroundColor = "rgb(201, 201, 201)";
-        clockHolder.style.color = "black";
-        clock.style.boxShadow= "-8px -8px 9px rgb(255, 255, 255),8px 8px 9px rgb(119,119,119),inset -8px -8px 9px rgb(255, 255, 255),inset 8px 8px 9px rgb(117, 117, 117)";
-    }
-
-    // for dark mode
-    let darkmode = () => {
-        clockHolder.style.backgroundColor = "rgb(30, 30, 30)";
-        clockHolder.style.color = "white";
-        clock.style.boxShadow= "-8px -8px 9px rgb(60, 60, 60),8px 8px 9px rgb(0, 0, 0),inset -8px -8px 9px rgb(60, 60, 60),inset 8px 8px 9px rgb(0, 0, 0);";
-    }
-    // Switching theme end--------------|

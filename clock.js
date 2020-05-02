@@ -43,3 +43,5 @@ modeimg.addEventListener("click", () => {
         clock.className = "clockW"
     }
 });
+
+console.log(clock.style);

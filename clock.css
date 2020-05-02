@@ -3,11 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    width: 100vw;
+}
 /* -------------- for dark mode ------------ */
 .clockHolderB{
-    height: 100vh;
+    height: 100%;
     color:white;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +19,8 @@
 }
 /* -------------- for white mode ------------ */
 .clockHolderW{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     color:black;
     display: flex;
     justify-content: center;
@@ -164,30 +168,65 @@
 }
 #header{
     align-self: flex-start;
+    height: 50px;
+    width: 50px;
     right: 0;
     top: 0;
-    padding: 5px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+#innerheader{
+    position: relative;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .modeimgB{
-    height: 20px;
-    width: 20px;
+    position: absolute;
+    height: 70%;
+    width: 70%;
     border-radius: 50%;
     box-shadow: -3px -3px 4px rgb(60, 60, 60),
                 3px 3px 4px rgb(0, 0, 0);
 }
 .modeimgW{
-    height: 20px;
-    width: 20px;
+    position: absolute;
+    height: 70%;
+    width: 70%;
     border-radius: 50%;
     box-shadow: -3px -3px 4px rgb(255, 255, 255),
                 3px 3px 4px rgb(119, 119, 119);
 }
-#modeimg:active{
-    height: 18px;
-    width: 18px;
+#innerheader:hover,
+#innerheader:active{
+    height: 40px;
+    width: 40px;
+    transform: rotateZ(180deg);
+}
 
+@media screen and (max-width : 400px){
+    #clock{
+        transform: scale(0.85);
+    }
+}
+@media screen and (min-width : 400px) and (max-width : 600px){
+    #clock{
+        transform: scale(0.9);
+    }
+}
+@media screen and (min-width : 600px) and (max-width : 800px){
+    #clock{
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width : 800px){
+    #clock{
+        transform: scale(2);
+    }
 }

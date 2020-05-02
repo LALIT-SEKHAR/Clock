@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLOCK</title>
-    <link rel="shortcut icon" href="https://lalit-sekhar.github.io/Clock/Group_2.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://lalit-sekhar.github.io/Clock/clock.css">
+    <link rel="shortcut icon" href="Group_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="clock.css">
 </head>
 <body>
-    <div class="clockHolder">
-        <header>
-            <img onclick="togglemethod();" src="https://lalit-sekhar.github.io/Clock/Group_1.png" alt="mode logo">
+    <div id="clockHolder" class="clockHolderW">
+        <header id="header">
+                <img id="modeimg" class="modeimgW" src="mode.png" alt="mode logo">
         </header>
-        <div class="clock">
+        <div id="clock" class="clockW">
                 <div class="second"><span class="Sstic"></span></div>
                 <div class="miuts"><span class="Mstic"></span></div>
                 <div class="hours"><span class="Hstic"></span></div>
@@ -29,7 +29,7 @@
                 <div id="twelve">12</div>
                 <div style=" transform:rotate(300deg);display: flex;justify-content:flex-end;align-items: center;height: 300px;width: 300px;position: absolute;">-</div>
                 <div style=" transform:rotate(330deg);display: flex;justify-content:flex-end;align-items: center;height: 300px;width: 300px;position: absolute;">-</div>
-
+    
                 <!-- <div style=" transform:rotate(6deg);display: flex;justify-content:flex-end;align-items: center;height: 300px;width: 300px;position: absolute;">.</div>
                 <div style=" transform:rotate(12deg);display: flex;justify-content:flex-end;align-items: center;height: 300px;width: 300px;position: absolute;">.</div>
                 <div style=" transform:rotate(18deg);display: flex;justify-content:flex-end;align-items: center;height: 300px;width: 300px;position: absolute;">.</div>
@@ -37,5 +37,5 @@
         </div>
     </div>
 </body>
-<script src="https://lalit-sekhar.github.io/Clock/clock.js"></script>
+<script src="clock.js"></script>
 </html>

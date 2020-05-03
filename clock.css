@@ -202,11 +202,9 @@ body{
     box-shadow: -3px -3px 4px rgb(255, 255, 255),
                 3px 3px 4px rgb(119, 119, 119);
 }
-#innerheader:hover,
 #innerheader:active{
     height: 40px;
     width: 40px;
-    transform: rotateZ(180deg);
 }
 
 @media screen and (max-width : 400px){
